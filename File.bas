@@ -33,3 +33,9 @@ Fail:
     rename = False
 End Sub
 
+Function browse( _
+    Optional filter As String = "All Files (*.*), *.*,Excel Files (*.xlsx; *.xlsm; *.xls), *.xlsx; *.xlsm; *.xls", _
+    Optional message As String _
+) As String
+    browse = Application.getOpenFilename(FileFilter:=filter, Title:=message)
+End Function
