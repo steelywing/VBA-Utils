@@ -27,7 +27,8 @@ Function isWorksheetExist(ByVal name, Optional wb As Excel.Workbook) As Boolean
     ' Method 1
     On Error Resume Next
     Set ws = wb.Sheets(name)
-    On Error GoTo 0
+    ' disable error handler
+    ' On Error GoTo 0
     isWorksheetExist = Not ws Is Nothing
     Exit Function
 
@@ -35,7 +36,7 @@ Function isWorksheetExist(ByVal name, Optional wb As Excel.Workbook) As Boolean
     On Error GoTo NotExist
     Set ws = wb.Worksheets(name)
     ' disable error handler
-    On Error GoTo 0
+    ' On Error GoTo 0
     isWorksheetExist = True
     Exit Function
 NotExist:
@@ -54,15 +55,3 @@ NotExist:
     Next
     isWorksheetExist = False
 End Function
-
-Function isFileExist(ByVal file As String) As Boolean
-    isFileExist = Dir(file) <> ""
-End Function
-
-Sub deleteFile(ByVal file As String)
-    If Dir(file) <> "" Then
-        SetAttr file, vbNormal
-        Kill file
-    End If
-End Sub
-
