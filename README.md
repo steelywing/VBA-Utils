@@ -11,6 +11,6 @@ Reference
 - [Array](array.md)
 - [File](file.md)
 
-Visual Basic Editor Color Scheme
+VB Editor Color Scheme
 --------------------------------
 [Dark](color scheme/dark.reg)
