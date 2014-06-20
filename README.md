@@ -3,10 +3,10 @@ VBA-Utils
 
 Module
 ------
-- [Utils](/SteelyWing/VBA-Utils/blob/master/Utils.bas)
-- [File](/SteelyWing/VBA-Utils/blob/master/File.bas)
+- [Utils](Utils.bas)
+- [File](File.bas)
 
 Reference
 ---------
-- [Array](/SteelyWing/VBA-Utils/blob/master/array.md)
-- [File](/SteelyWing/VBA-Utils/blob/master/file.md)
+- [Array](array.md)
+- [File](file.md)
