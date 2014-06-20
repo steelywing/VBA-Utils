@@ -13,4 +13,4 @@ Reference
 
 VB Editor Color Scheme
 --------------------------------
-[Dark](color scheme/dark.reg)
+- [Dark](color scheme/dark.reg)
