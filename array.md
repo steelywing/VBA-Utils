@@ -1,19 +1,19 @@
 Declare array
-```visual basic
+```vb
 Dim a() as string
 ```
  
 Init array
-```visual basic
+```vb
 a = Array("A", "B", "C")
 ```
 
 Init array size to 10 (remove values)
-```visual basic
+```vb
 ReDim a(10)
 ```
 
 Resize array (preserve values)
-```visual basic
+```vb
 ReDim Preserve a(20)
 ```
