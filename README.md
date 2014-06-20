@@ -1,2 +1,2 @@
-VBA-utils
-=========
+Excel-VBA-utils
+===============
