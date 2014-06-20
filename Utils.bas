@@ -139,6 +139,12 @@ Function lastRow(Optional ws As Worksheet) As Integer
     '----------
     ' wrong if last row deleted
     lastRow = ws.Cells.SpecialCells(xlCellTypeLastCell).row
+    
+    '----------
+    ' Method 3
+    '----------
+    ' find only first column
+    lastRow = ws.Cells(ws.Rows.Count, 1).End(xlUp)
 End Function
 
 Function specialFolder(ByVal name As String) As String
