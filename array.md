@@ -8,12 +8,14 @@ Init array
 a = Array("A", "B", "C")
 ```
 
-Init array size to 10 (remove values)
-```vb
-ReDim a(10)
-```
-
 Resize array (preserve values)
 ```vb
 ReDim Preserve a(20)
+' Array("A", "B", "C", Nothing, Nothing, ...)
+```
+
+Init array size to 10 (remove values)
+```vb
+ReDim a(10)
+' Array(Nothing, Nothing, ...)
 ```
