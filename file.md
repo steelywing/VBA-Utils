@@ -14,7 +14,7 @@ While file <> ""
 Wend
 ```
 
-Open Excel file in Word, remember enable [Tools] > [References] > [Microsoft Excel XX.X Object Library]
+Open Excel file in Word, remember enable `Tools` > `References` > `Microsoft Excel XX.X Object Library`
 ```vb
 Dim xlApp As Excel.Application
 Dim wb As Excel.Workbook
