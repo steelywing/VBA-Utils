@@ -19,15 +19,17 @@ Open Excel file in Word, remember enable [Tools] -> [References] -> [Microsoft E
 Dim xlApp As Excel.Application
 Dim wb As Excel.Workbook
 Dim ws As Excel.Worksheet
-Dim name As ContentControl
+Dim cc As ContentControl
+
+Set cc = ActiveDocument.ContentControls.Add(wdContentControlRichText)
+' cc.Tag = "excel_a1"
+' Set cc = ActiveDocument.SelectContentControlsByTag("excel_a1")(1)
 
 Set xlApp = New Excel.Application
-
 Set wb = xlApp.Workbooks.Open(ActiveDocument.Path & "\Book.xlsx")
 Set ws = wb.Worksheets(1)
 ' xlApp.Visible = True
-Set name = ActiveDocument.SelectContentControlsByTag("name")(1)
-name.Range.Text = _
-    ws.Range("A1").Value
+
+cc.Range.Text = ws.Range("A1").Value
 wb.Close
 ```
